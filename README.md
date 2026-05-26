@@ -31,7 +31,7 @@ A perda de talentos-chave gera custos altíssimos de recrutamento, perda de hist
 
 ## ⚙️ Funcionalidades e Etapas Tecnológicas
 
-O projeto é executado seguindo um roteiro técnico rigoroso dividido em etapass práticas:
+O projeto é executado seguindo um roteiro técnico rigoroso dividido em etapas práticas:
 
 - [x] **Organização e Engenharia de Dados:** Estruturação do pipeline de dados e importação de variáveis demográficas e de performance.
 - [ ] **Análise Exploratória de Dados (EDA):** Identificação de distribuições de frequência, correlações e padrões iniciais de demissão.
