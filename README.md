@@ -34,7 +34,7 @@ A perda de talentos-chave gera custos altíssimos de recrutamento, perda de hist
 O projeto é executado seguindo um roteiro técnico rigoroso dividido em etapas práticas:
 
 - [x] **Organização e Engenharia de Dados:** Estruturação do pipeline de dados e importação de variáveis demográficas e de performance.
-- [ ] **Análise Exploratória de Dados (EDA):** Identificação de distribuições de frequência, correlações e padrões iniciais de demissão.
+- [x] **Análise Exploratória de Dados (EDA):** Identificação de distribuições de frequência, correlações e padrões iniciais de demissão.
 - [ ] **Análise de Sobrevivência:** Modelagem estatística baseada em tempo de casa do colaborador para estimar a curva de retenção.
 - [ ] **Automação da Matriz 9-Box:** Cruzamento de dados de avaliação para categorizar os colaboradores dinamicamente.
 - [ ] **Geração de Insights de Negócio:** Cruzamento do risco de atrito com o potencial do funcionário para sugerir planos de retenção.
