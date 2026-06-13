@@ -33,11 +33,14 @@ A perda de talentos-chave gera custos altíssimos de recrutamento, perda de hist
 
 O projeto é executado seguindo um roteiro técnico rigoroso dividido em etapas práticas:
 
-- [x] **Organização e Engenharia de Dados:** Estruturação do pipeline de dados e importação de variáveis demográficas e de performance.
-- [x] **Análise Exploratória de Dados (EDA):** Identificação de distribuições de frequência, correlações e padrões iniciais de demissão.
-- [ ] **Análise de Sobrevivência:** Modelagem estatística baseada em tempo de casa do colaborador para estimar a curva de retenção.
-- [ ] **Automação da Matriz 9-Box:** Cruzamento de dados de avaliação para categorizar os colaboradores dinamicamente.
-- [ ] **Geração de Insights de Negócio:** Cruzamento do risco de atrito com o potencial do funcionário para sugerir planos de retenção.
+## ⚙️ Funcionalidades e Etapas Tecnológicas
+
+Como parte da minha formação e desenvolvimento em Ciência de Dados, o projeto foi estruturado de forma prática e incremental através dos seguintes notebooks:
+
+- [x] **01. Tratamento de Dados (Organização e Engenharia):** Higienização da base original da IBM, tradução de features e estruturação do pipeline inicial de importação de variáveis demográficas e de performance.
+- [x] **02. Análise Exploratória (EDA):** Investigação detalhada de distribuições de frequência, correlações e identificação de padrões iniciais envolvidos na demissão de colaboradores.
+- [x] **03. Diagnóstico Estatístico Visual (Automação da Matriz 9-Box):** Cruzamento de dados de avaliação e performance para categorizar os funcionários dinamicamente, gerando os primeiros insights visuais e testes estatísticos.
+- [x] **04. Análise de Sobrevivência e Insights de Negócio:** Aplicação de modelagem estatística baseada no tempo de casa para estimar a curva de retenção. Cruzamento do risco de atrito com o potencial do funcionário (9-Box) para sugerir planos estratégicos de retenção de talentos.
 
 ---
 
@@ -54,11 +57,18 @@ O projeto é executado seguindo um roteiro técnico rigoroso dividido em etapas 
 ## 📁 Estrutura do Repositório
 
 ```text
-├── data/               # Bases de dados (anonimizadas)
-├── notebooks/          # Jupyter Notebooks ordenados por etapas de análise
-│   ├── 01_eda_limpeza.ipynb
-│   ├── 02_analise_sobrevivencia.ipynb
-│   └── 03_matriz_9box.ipynb
-├── src/                # Scripts auxiliares para automação (.py)
-├── .gitignore          # Proteção para não subir arquivos pesados ou confidenciais
-└── README.md           # Documentação principal
+ANALISE_ATRITO/
+├── data/
+│   ├── tabela_base_traduzida.csv                 # Base de dados tratada e traduzida
+│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv     # Base de dados original (IBM HR Data)
+├── notebooks/
+│   ├── 01_tratamento_dados.ipynb                 # Limpeza e preparação dos dados
+│   ├── 02_analise_exploratoria.ipynb             # Análise exploratória descritiva (EDA)
+│   ├── 03_diagnostico_estatistico_visual.ipynb   # Visualizações e testes de hipóteses
+│   └── 04_analise_sobrevivencia.ipynb            # Curvas de Kaplan-Meier e riscos proporcionais
+├── src/
+│   └── main.py                                   # Script principal para automação do pipeline
+├── venv/                                         # Ambiente virtual (ignorado no Git)
+├── .gitignore                                    # Restrições de upload (arquivos locais e venv)
+├── README.md                                     # Documentação principal do projeto
+└── requirements.txt                              # Dependências e bibliotecas do projeto
